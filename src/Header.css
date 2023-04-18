@@ -1,0 +1,161 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar {
+  display: flex;
+}
+
+.navBar li {
+  list-style: none;
+  font-size: 22px;
+  margin: 40px 10px;
+}
+.navBar a {
+  text-decoration: none;
+}
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+p {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #a9dc76;
+}
+
+.tagLine {
+  text-align: center;
+  font-size: 24px;
+  color: #a9dc76;
+  width: 80%;
+  margin: 30px auto;
+  text-align: justify;
+}
+
+.projectsBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.projectsBtn a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #a9dc76;
+  border: 1px solid #ffa500;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.projectsBtn a:hover {
+  border: 1px solid #a9dc76;
+  color: #ffa500;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: hsl(0, 0%, 30%);
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 30%) 17%,
+    hsl(0, 0%, 100%) 20%,
+    hsl(0, 0%, 30%) 30%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wave 3s infinite linear;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 700px;
+  }
+  100% {
+    background-position: 700px;
+  }
+}
+
+header .navBtn {
+  padding: 5px;
+  margin-top: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: none;
+  opacity: 0;
+  color: #fff;
+  font-size: 2.8rem;
+}
+
+@media only screen and (max-width: 770px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  header .navBtn {
+    display: block;
+    opacity: 1;
+  }
+
+  header ul {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    z-index: 1;
+    transition: 1s;
+    transform: translateX(-100vh);
+    overflow: hidden;
+  }
+  header a {
+    text-decoration: none;
+    background-color: #2d2d2d;
+  }
+
+  header ul.active {
+    transform: none;
+  }
+
+  header .navClose {
+    position: absolute;
+    background-color: #2d2d2d;
+    top: 0;
+    right: 1rem;
+    color: #ffa500;
+  }
+
+  header ul {
+    font-size: 1.5rem;
+  }
+  p {
+    margin-top: 40px;
+  }
+  h1 {
+    margin-top: 10px;
+  }
+}

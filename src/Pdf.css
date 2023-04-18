@@ -1,0 +1,39 @@
+.pdf-container {
+  display: grid;
+  place-items: center;
+}
+
+.pdf-viewer {
+  margin: 80px auto;
+  max-width: 80vw;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.react-pdf__Page__annotations {
+  display: none;
+}
+
+.react-pdf__Page__textContent {
+  display: none;
+}
+
+.pdf-container a {
+  color: hsl(0, 0%, 30%);
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s ease; /* transition the color property over 0.3s */
+}
+
+.pdf-container a:hover {
+  color: hsl(0, 0%, 80%);
+}
+
+.pdf-container p {
+  text-align: center;
+  font-size: 18px;
+  color: #a9dc76;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
