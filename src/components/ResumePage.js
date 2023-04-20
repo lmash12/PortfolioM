@@ -24,10 +24,11 @@ const ResumePage = () => {
         </Document>
       </div>
       <p>
-        Thanks for taking the time to review my resume! Please note that it may
-        not be up to date because I'm constantly learning and growing. So if you
-        have any questions or just want to chat about the latest cat memes, feel
-        free to get in touch!
+        Thank you for checking out my resume! Please keep in mind that resumes,
+        like milk, have an expiration date. But don't worry, I'm always ready to
+        update it and provide you with the latest scoop on my skills and
+        experience. Feel free to reach out for any clarifications or just to
+        chat over a cup of coffee! Cheers!
       </p>
     </div>
   );
