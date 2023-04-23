@@ -18,7 +18,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn link"

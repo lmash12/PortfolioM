@@ -21,9 +21,10 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="Home page"
                 style={({ isActive }) =>
-                  isActive ? { color: " white" } : { color: "#a9dc76" }
+                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
                 }
                 to="/"
+                onClick={toggleNav}
               >
                 Home
               </NavLink>
@@ -32,9 +33,10 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="about page"
                 style={({ isActive }) =>
-                  isActive ? { color: " white" } : { color: "#a9dc76" }
+                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
                 }
                 to="about"
+                onClick={toggleNav}
               >
                 About
               </NavLink>
@@ -43,9 +45,10 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="projects page"
                 style={({ isActive }) =>
-                  isActive ? { color: " white" } : { color: "#a9dc76" }
+                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
                 }
                 to="projects"
+                onClick={toggleNav}
               >
                 Projects
               </NavLink>
@@ -54,9 +57,10 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="contact page"
                 style={({ isActive }) =>
-                  isActive ? { color: " white" } : { color: "#a9dc76" }
+                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
                 }
                 to="contact"
+                onClick={toggleNav}
               >
                 Contact
               </NavLink>
@@ -65,7 +69,7 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="resume page"
                 style={({ isActive }) =>
-                  isActive ? { color: " white" } : { color: "#a9dc76" }
+                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
                 }
                 to="resume"
               >
