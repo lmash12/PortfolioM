@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Header.css";
 import { NavLink } from "react-router-dom";
 import image from "./img/les.jpg";
@@ -7,9 +7,11 @@ import { FaBars } from "react-icons/fa";
 
 const HeaderSection = () => {
   const navRef = useRef();
+  const [isNavOpen, setNavOpen] = useState(false);
 
   const toggleNav = () => {
     navRef.current.classList.toggle("active");
+    setNavOpen(!isNavOpen);
   };
   return (
     <div>
@@ -72,12 +74,16 @@ const HeaderSection = () => {
                   isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
                 }
                 to="resume"
+                onClick={toggleNav}
               >
                 Resume
               </NavLink>
             </li>
             <li>
-              <button className="navBtn navClose" onClick={toggleNav}>
+              <button
+                className={`navBtn navClose ${isNavOpen ? "spin" : ""}`}
+                onClick={toggleNav}
+              >
                 X
               </button>
             </li>

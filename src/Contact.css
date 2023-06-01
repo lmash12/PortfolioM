@@ -33,12 +33,12 @@ textarea:focus {
   border: 2px solid rgba(0, 206, 158, 1);
 }
 label {
-  margin-top: 15px;
+  margin-top: 25px;
   color: #a9dc76;
 }
 
 input[type="submit"] {
-  margin-top: 15px;
+  margin-top: 25px;
   cursor: pointer;
   background: rgb(249, 105, 14);
   color: whitesmoke;
@@ -47,6 +47,7 @@ input[type="submit"] {
 .contact p {
   text-align: center;
   font-size: 24px;
+  word-spacing: 1px;
   color: #a9dc76;
   width: 80%;
   margin: 30px auto;
@@ -60,6 +61,7 @@ input[type="submit"] {
 .about p {
   text-align: center;
   font-size: 24px;
+  word-spacing: 1px;
   color: #a9dc76;
   width: 80%;
   margin: 30px auto;

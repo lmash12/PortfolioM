@@ -28,6 +28,7 @@ p {
   font-size: 24px;
   color: #a9dc76;
   word-spacing: 1px;
+  letter-spacing: -0.5px;
 }
 
 .tagLine {
@@ -37,6 +38,12 @@ p {
   width: 80%;
   margin: 30px auto;
   text-align: justify;
+  word-spacing: -0.05em;
+  letter-spacing: -0.5px;
+}
+.home-tag p {
+  color: #a9dc76 !important;
+  word-spacing: 1px;
 }
 
 .projectsBtn {
@@ -76,7 +83,8 @@ h1 {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: wave 3s infinite linear;
+  animation: wave 5s linear;
+  animation-iteration-count: 3;
 }
 
 @keyframes wave {
@@ -113,6 +121,7 @@ header .navBtn {
   p {
     word-spacing: 1px;
   }
+
   header .navBtn {
     display: block;
     opacity: 1;
@@ -152,12 +161,20 @@ header .navBtn {
     right: 1rem;
     color: #ffa500;
   }
-
-  /* header ul {
-    font-size: 1.5rem;
-  } */
+  .spin {
+    animation: spin 1s linear;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   p {
     margin-top: 40px;
+    word-spacing: -2px;
   }
   h1 {
     margin-top: 10px;
@@ -169,7 +186,11 @@ header .navBtn {
     font-size: 1.2rem;
   }
   p {
-    word-spacing: 1px;
+    word-spacing: -1px;
+  }
+  .home-tag p {
+    color: #a9dc76 !important;
+    word-spacing: -1px !important;
   }
   header ul {
     position: absolute;

@@ -5,14 +5,12 @@ import "../Pdf.css";
 import { FaFileDownload } from "react-icons/fa";
 
 const ResumePage = () => {
+  console.log(resume);
   return (
     <div className="pdf-container">
-      <h1>Resume</h1>
+      <h1>Resume.</h1>
       <span>
-        <a
-          href="https://docs.google.com/document/d/1EqEk8tDa23OssEb_LXN1SbHnUkL13GBfF9bAOrbCkho/export?format=pdf"
-          download
-        >
+        <a href="https://drive.google.com/uc?export=download&id=1C2WfhT8oR390_8pqd0wkQResncQ6X5W-">
           <FaFileDownload />
         </a>
       </span>

@@ -4,7 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { VscPreview } from "react-icons/vsc";
 import project1 from "./img/project1-preview.png";
 import project2 from "./img/project2-preview.jpg";
-import project3 from "./img/project3-preview.jpg";
+import project3 from "./img/project3-preview.png";
 import project4 from "./img/project4-preview.png";
 
 const ProjectsPage = () => {
@@ -30,11 +30,11 @@ const ProjectsPage = () => {
     },
     {
       id: 3,
-      title: "Random User Generator",
+      title: "Landing Page",
       description:
-        "The Random User Generator is a React web app that utilizes an API call to generate randomized user data for testing and demonstration purposes. The app features a modular component architecture, efficient state management, and modern development tools for optimal performance and cross-browser compatibility.",
-      githubLink: "https://github.com/lmash12/Assignment2",
-      liveLink: "https://assignment-2-alt-school.web.app/",
+        "Bridal Lounge is a website designed to help brides-to-be plan their perfect wedding. The website was built on reactjs and is hosted on firebase. The website is fully responsive and has a clean and modern design.",
+      githubLink: "https://github.com/lmash12/bridal-lounge",
+      liveLink: "https://bridal-lounge-ef4a7.web.app/",
       image: project3,
     },
     {
@@ -54,13 +54,13 @@ const ProjectsPage = () => {
   };
   return (
     <div>
-      <h1>Projects</h1>
+      <h1>Projects.</h1>
       <p>Some of the projects I have worked on.</p>
       <div className="projects-container">
         {projects.map((project) => (
           <div key={project.id} className="project">
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <p style={{ wordSpacing: "1px" }}>{project.description}</p>
             <div className="links-container">
               <a href={project.githubLink} target="_blank" rel="noreferrer">
                 <FaGithub className="link" />

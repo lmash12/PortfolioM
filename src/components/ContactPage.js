@@ -28,13 +28,13 @@ const ContactPage = () => {
   };
   return (
     <div className="contact">
-      <h1>Let's Connect</h1>
-      <p>
+      <h1>Contact.</h1>
+      <p style={{ wordSpacing: "1px" }}>
         I'm always open to connecting with new people, whether it's for work
         opportunities or just a casual chat over coffee. If you have a project
-        in mind or simply want to say hello, feel free to get in touch using the
-        contact form below. I'd love to hear from you and see how we can work
-        together to bring your ideas to life.
+        in mind or would like to discuss work opportunities, feel free to get in
+        touch using the contact form below. I'd love to hear from you and see
+        how we can work together to bring your ideas to life.
       </p>
       <main className="contact-sec">
         <form className="EmailForm form" ref={form} onSubmit={sendEmail}>

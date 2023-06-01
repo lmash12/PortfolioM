@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="home-tag">
       <p>Hello! My Name Is</p>
       <h1 className="NameTag">Lesley Mashaya</h1>
       <p className="tagLine">
