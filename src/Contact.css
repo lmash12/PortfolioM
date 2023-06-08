@@ -12,6 +12,7 @@ input {
   padding: 7px;
   outline: none;
   border-radius: 5px;
+  color: white;
   border: 1px solid rgb(255, 259, 249);
 }
 input:focus {
@@ -28,6 +29,7 @@ textarea {
   outline: none;
   border-radius: 5px;
   border: 1px solid rgb(220, 220, 220);
+  color: white;
 }
 textarea:focus {
   border: 2px solid rgba(0, 206, 158, 1);
