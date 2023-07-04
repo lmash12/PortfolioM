@@ -1,6 +1,7 @@
 .pdf-container {
   display: grid;
   place-items: center;
+  margin-top: 50px;
 }
 
 .pdf-viewer {
@@ -32,7 +33,7 @@
 
 .pdf-container p {
   text-align: center;
-  font-size: 18px;
+  font-size: 35px;
   color: #a9dc76;
   width: 80%;
   margin: 0 auto;

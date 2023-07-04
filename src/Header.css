@@ -9,41 +9,34 @@ nav {
 
 .navBar li {
   list-style: none;
-  font-size: 22px;
+  font-size: 30px;
   margin: 40px 10px;
 }
 .navBar a {
   text-decoration: none;
 }
-img {
-  width: 60px;
-  height: 60px;
+nav img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   margin-top: 30px;
   margin-left: 30px;
 }
-p {
+.home-tag p {
   margin-top: 50px;
   text-align: center;
-  font-size: 24px;
+  font-size: 35px;
   color: #a9dc76;
   word-spacing: 1px;
   letter-spacing: -0.5px;
 }
 
 .tagLine {
-  text-align: center;
-  font-size: 24px;
-  color: #a9dc76;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80%;
   margin: 30px auto;
-  text-align: justify;
-  word-spacing: -0.05em;
-  letter-spacing: -0.5px;
-}
-.home-tag p {
-  color: #a9dc76 !important;
-  word-spacing: 1px;
 }
 
 .projectsBtn {
@@ -73,30 +66,9 @@ h1 {
   color: hsl(0, 0%, 30%);
   font-size: 50px;
   font-weight: bold;
-  letter-spacing: 7px;
   text-transform: uppercase;
-  background: linear-gradient(
-    to right,
-    hsl(0, 0%, 30%) 17%,
-    hsl(0, 0%, 100%) 20%,
-    hsl(0, 0%, 30%) 30%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: wave 5s linear;
-  animation-iteration-count: 3;
-}
-
-@keyframes wave {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 700px;
-  }
-  100% {
-    background-position: 700px;
-  }
+  animation: animate__backInDown;
+  animation-duration: 2s;
 }
 
 header .navBtn {
@@ -126,6 +98,13 @@ header .navBtn {
     display: block;
     opacity: 1;
   }
+  nav img {
+    width: 150px;
+    height: 150px;
+  }
+  header li:first-child {
+    margin-top: 100px;
+  }
 
   header ul {
     position: absolute;
@@ -139,11 +118,12 @@ header .navBtn {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     transition: 1s;
     transform: translateX(-100vh);
     overflow: hidden;
     background-color: #232222;
+    z-index: 1;
   }
   header a {
     text-decoration: none;

@@ -1,12 +1,15 @@
 import React from "react";
 import "../Header.css";
 import { Link } from "react-router-dom";
+import "animate.css";
 
 const HomePage = () => {
   return (
     <div className="home-tag">
       <p>Hello! My Name Is</p>
-      <h1 className="NameTag">Lesley Mashaya</h1>
+      <h1 className="NameTag animate__animated animate__backInDown">
+        Lesley Mashaya
+      </h1>
       <p className="tagLine">
         Welcome to my portfolio! I'm a frontend developer who loves building and
         designing websites that make an impact. With a passion for creating
@@ -17,7 +20,7 @@ const HomePage = () => {
         ideas to life!
       </p>
       <div className="projectsBtn">
-        <Link aria-label="projects page" to="projects">
+        <Link aria-label="projects page" to="/projects">
           Projects
         </Link>
       </div>

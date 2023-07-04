@@ -53,7 +53,7 @@ const ProjectsPage = () => {
     setPreviewProject(project);
   };
   return (
-    <div>
+    <div className="projects">
       <h1>Projects.</h1>
       <p>Some of the projects I have worked on.</p>
       <div className="projects-container">

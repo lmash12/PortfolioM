@@ -3,6 +3,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects p {
+  font-size: 28px;
+  color: #8b00ff;
+  margin-top: 30px;
+}
 
 .project {
   width: calc(50% - 80px);
@@ -23,12 +34,13 @@
   margin-top: 0;
   text-align: center;
   color: #a9dc76;
+  font-size: 35px;
 }
 .project p {
   margin-top: 15px;
   text-align: center;
   color: #1e1e1e;
-  font-size: 0.9em;
+  font-size: 35px;
   background-color: transparent;
 }
 
@@ -141,6 +153,9 @@
 @media (max-width: 768px) {
   .project {
     width: 100%;
+  }
+  .project p {
+    font-size: 24px;
   }
   .preview-container img {
     width: 90%;
