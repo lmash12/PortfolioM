@@ -18,10 +18,10 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="linkedin.com"
+            href="https://www.linkedin.com/in/lesley-mashaya-428b97278/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn link"
+            aria-label="LinkedIn link for Lesley Mashaya"
           >
             <FaLinkedinIn />
           </a>

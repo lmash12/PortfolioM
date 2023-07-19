@@ -10,7 +10,6 @@
   align-items: center;
 }
 .projects p {
-  font-size: 28px;
   color: #8b00ff;
   margin-top: 30px;
 }
@@ -34,13 +33,12 @@
   margin-top: 0;
   text-align: center;
   color: #a9dc76;
-  font-size: 35px;
+  font-size: 30px;
 }
 .project p {
   margin-top: 15px;
   text-align: center;
   color: #1e1e1e;
-  font-size: 35px;
   background-color: transparent;
 }
 
@@ -66,7 +64,7 @@
 }
 .links-container a:hover {
   color: #ffa500;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 .links-container button {
   margin: 10px;
@@ -83,16 +81,12 @@
 }
 .links-container button:hover {
   color: #ffa500;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 .link {
   background-color: transparent;
 }
-/* button {
-  padding: 0;
-  border: none;
-  margin: 0;
-} */
+
 .preview-container {
   position: fixed;
   top: 0;
@@ -131,7 +125,6 @@
 }
 .preview-buttons button {
   margin: 10px;
-  font-size: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,12 +143,20 @@
   background-color: transparent;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .project {
     width: 100%;
   }
   .project p {
-    font-size: 24px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .projects h1 {
+    margin-top: 30px;
+    font-size: 21px;
+  }
+  .projects h3 {
+    font-size: 18px;
   }
   .preview-container img {
     width: 90%;
@@ -163,5 +164,19 @@
     object-fit: contain;
     border-radius: 5px;
     margin: auto 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .projects h1 {
+    margin-top: 20px;
+    font-size: 19px;
+  }
+  .projects h3 {
+    font-size: 17px;
+  }
+  .project p {
+    font-size: 14px;
+    text-align: left;
   }
 }

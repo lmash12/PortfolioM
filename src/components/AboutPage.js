@@ -15,7 +15,7 @@ const AboutPage = () => {
         attended a bootcamp at Altschool Africa - they say that's where the
         magic happens! Now, armed with the power of ReactJS and VueJS, I'm
         taking on the world one website at a time. But I'm not done yet - I'm
-        currently exploring the possibilities of NextJS, and who knows where
+        currently exploring the possibilities of Flutter, and who knows where
         that will take me? All I know is that it's an exciting journey, and I'm
         glad to be on it!
       </p>

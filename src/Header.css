@@ -10,22 +10,21 @@ nav {
 .navBar li {
   list-style: none;
   font-size: 30px;
-  margin: 40px 10px;
+  margin: 20px 10px;
 }
 .navBar a {
   text-decoration: none;
 }
 nav img {
-  width: 250px;
-  height: 250px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 30px;
 }
 .home-tag p {
   margin-top: 50px;
   text-align: center;
-  font-size: 35px;
   color: #a9dc76;
   word-spacing: 1px;
   letter-spacing: -0.5px;
@@ -96,11 +95,14 @@ header .navBtn {
 
   header .navBtn {
     display: block;
+    position: absolute;
+    right: 0;
+    top: -20px;
     opacity: 1;
   }
   nav img {
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
   }
   header li:first-child {
     margin-top: 100px;
@@ -152,25 +154,27 @@ header .navBtn {
       transform: rotate(360deg);
     }
   }
-  p {
-    margin-top: 40px;
-    word-spacing: -2px;
+  .home-tag p {
+    margin-top: 50px;
+    text-align: left;
+  }
+  .home-tag p:first-child {
+    margin-top: 100px;
+    text-align: center;
   }
   h1 {
+    font-size: 21px;
     margin-top: 10px;
   }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 320px) {
   header ul {
-    font-size: 1.2rem;
+    font-size: 14px;
   }
-  p {
-    word-spacing: -1px;
-  }
+
   .home-tag p {
     color: #a9dc76 !important;
-    word-spacing: -1px !important;
   }
   header ul {
     position: absolute;
@@ -194,5 +198,8 @@ header .navBtn {
     text-decoration: none;
     background-color: #232222;
     line-height: 1.2;
+  }
+  .home-tag h1 {
+    font-size: 25px;
   }
 }

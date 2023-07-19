@@ -7,7 +7,7 @@
 .pdf-viewer {
   color: white;
   margin: 80px auto;
-  max-width: 80vw;
+  max-width: 90vw;
   height: 600px;
   overflow-y: auto;
 }
@@ -24,7 +24,7 @@
   color: hsl(0, 0%, 30%);
   text-decoration: none;
   font-size: 24px;
-  transition: color 0.3s ease; /* transition the color property over 0.3s */
+  transition: color 0.3s ease;
 }
 
 .pdf-container a:hover {
@@ -33,9 +33,32 @@
 
 .pdf-container p {
   text-align: center;
-  font-size: 35px;
   color: #a9dc76;
   width: 80%;
   margin: 0 auto;
   text-align: justify;
+}
+@media only screen and (max-width: 960px) {
+  .pdf-container p {
+    font-size: 16px;
+    text-align: left;
+  }
+  .pdf-viewer {
+    width: 100%;
+  }
+  .pdf-viewer {
+    overflow-x: auto;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .pdf-container p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .pdf-viewer {
+    width: 100%;
+  }
+  .pdf-viewer {
+    overflow-x: auto;
+  }
 }

@@ -29,7 +29,7 @@ const ContactPage = () => {
   return (
     <div className="contact">
       <h1>Contact.</h1>
-      <p style={{ wordSpacing: "1px" }}>
+      <p>
         I'm always open to connecting with new people, whether it's for work
         opportunities or just a casual chat over coffee. If you have a project
         in mind or would like to discuss work opportunities, feel free to get in
@@ -44,7 +44,8 @@ const ContactPage = () => {
           <input
             type="email"
             name="user_email"
-            placeholder="Enter Your Email" required
+            placeholder="Enter Your Email"
+            required
           />
           <label>Message</label>
           <textarea name="message" required />
