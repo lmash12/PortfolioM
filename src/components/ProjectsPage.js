@@ -22,12 +22,12 @@ const ProjectsPage = () => {
     },
     {
       id: 2,
-      title: "Quotes Web App",
+      title: "Web Development Business Page",
       description:
-        "Bring inspiration to your day with the Random Quotes Generator. This app was created using React and an API call to retrieve quotes from a variety of sources, including famous figures and inspiring personalities. With just a click, receive a thought-provoking quote to keep you inspired and uplifted all day long.",
-      githubLink: "https://github.com/lmash12/Free-Quotes-App",
-      liveLink: "https://quotes-6a00c.web.app/",
-      image: project2,
+        "This is a web development business page, built using HTML, CSS and JavaScript. The page is fully responsive and has a clean, simple and modern design.",
+      githubLink: "https://github.com/lmash12/workpage",
+      liveLink: "https://lmash12.github.io/workpage/",
+      image: project5,
     },
     {
       id: 3,
@@ -49,13 +49,14 @@ const ProjectsPage = () => {
     },
     {
       id: 5,
-      title: "Web Development Business Page",
+      title: "Quotes Web App",
       description:
-        "This is a web development business page, built using HTML, CSS and JavaScript. The page is fully responsive and has a clean, simple and modern design.",
-      githubLink: "https://github.com/lmash12/workpage",
-      liveLink: "https://lmash12.github.io/workpage/",
-      image: project5,
+        "Bring inspiration to your day with the Random Quotes Generator. This app was created using React and an API call to retrieve quotes from a variety of sources, including famous figures and inspiring personalities. With just a click, receive a thought-provoking quote to keep you inspired and uplifted all day long.",
+      githubLink: "https://github.com/lmash12/Free-Quotes-App",
+      liveLink: "https://quotes-6a00c.web.app/",
+      image: project2,
     },
+
     // add more projects here
   ];
 
