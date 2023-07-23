@@ -10,7 +10,7 @@
   align-items: center;
 }
 .projects p {
-  color: #8b00ff;
+  color: #a9dc76;
   margin-top: 30px;
 }
 
@@ -21,12 +21,12 @@
   border-radius: 5px;
   border-top: 3px solid;
   border-left: 3px solid;
-  background-image: linear-gradient(to bottom, #a9dc76, #ffa500, #8b00ff);
+  background-image: linear-gradient(to bottom, #5c5470, #352f44, #2a2438);
   background-size: 3px 100%;
   background-position: left top;
 }
 .project:hover {
-  background-image: linear-gradient(to bottom, #8b00ff, #ffa500, #a9dc76);
+  background-image: linear-gradient(to bottom, #2a2438, #352f44, #5c5470);
 }
 
 .project h3 {
@@ -37,8 +37,9 @@
 }
 .project p {
   margin-top: 15px;
+  padding: 10px 5px;
   text-align: center;
-  color: #1e1e1e;
+  color: rgb(251, 251, 251);
   background-color: transparent;
 }
 
@@ -98,14 +99,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 .preview-container img {
-  width: 70%;
-  height: 50%;
+  width: 100%;
+  height: 70%;
   object-fit: contain;
-  border-radius: 5px;
-  background-image: linear-gradient(to bottom, #a9dc76, #ffa500, #8b00ff);
   background-size: 3px 100%;
   background-position: left top;
 }
@@ -125,6 +123,7 @@
 }
 .preview-buttons button {
   margin: 10px;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,6 +163,10 @@
     object-fit: contain;
     border-radius: 5px;
     margin: auto 5%;
+  }
+  .preview-buttons button {
+    font-size: 24px;
+    font-weight: 600;
   }
 }
 

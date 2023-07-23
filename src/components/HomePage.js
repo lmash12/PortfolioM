@@ -24,6 +24,18 @@ const HomePage = () => {
           Projects
         </Link>
       </div>
+      <div className="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Vue</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Git</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
     </div>
   );
 };

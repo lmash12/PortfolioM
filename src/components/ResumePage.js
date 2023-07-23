@@ -10,7 +10,7 @@ const ResumePage = () => {
     <div className="pdf-container">
       <h1>Resume.</h1>
       <span>
-        <a href="https://drive.google.com/uc?export=download&id=1C2WfhT8oR390_8pqd0wkQResncQ6X5W-">
+        <a href="https://drive.google.com/uc?export=download&id=1zvx1BXylttfObJDZ0JejOLaHUNVqMOQ4">
           <FaFileDownload />
         </a>
       </span>

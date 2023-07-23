@@ -2,21 +2,22 @@ import React, { useState } from "react";
 import "../Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { VscPreview } from "react-icons/vsc";
-import project1 from "./img/project1-preview.png";
+import project1 from "./img/project1-preview.jpg";
 import project2 from "./img/project2-preview.jpg";
 import project3 from "./img/project3-preview.png";
 import project4 from "./img/project4-preview.png";
+import project5 from "./img/project5-preview.jpg";
 
 const ProjectsPage = () => {
   const [previewProject, setPreviewProject] = useState(null);
   const projects = [
     {
       id: 1,
-      title: "Github Repo Search",
+      title: "Kamano Seed Limited (React Application)",
       description:
-        "This project is a personal website that showcases my programming skills and experience by displaying all of my Github repositories in one place. The site utilizes an API to fetch and display each repository, and provides users with a brief description of the project, as well as a link to the Github repo.",
-      githubLink: "https://github.com/lmash12/exam-project-alt-school",
-      liveLink: "https://project-exam-88dbb.web.app/",
+        "Kamano Seed Limited is a React web application that allows users to view the company's offerings. The application was built using React. The application is hosted on firebase and is fully responsive.",
+      githubLink: "https://github.com/lmash12",
+      liveLink: "https://kamano-9ebe7.web.app/",
       image: project1,
     },
     {
@@ -30,7 +31,7 @@ const ProjectsPage = () => {
     },
     {
       id: 3,
-      title: "Landing Page",
+      title: "Bridal Lounge Landing Page",
       description:
         "Bridal Lounge is a website designed to help brides-to-be plan their perfect wedding. The website was built on reactjs and is hosted on firebase. The website is fully responsive and has a clean and modern design.",
       githubLink: "https://github.com/lmash12/bridal-lounge",
@@ -45,6 +46,15 @@ const ProjectsPage = () => {
       githubLink: "https://github.com/lmash12/third-semester-project",
       liveLink: "https://counter-ce043.web.app/",
       image: project4,
+    },
+    {
+      id: 5,
+      title: "Web Development Business Page",
+      description:
+        "This is a web development business page, built using HTML, CSS and JavaScript. The page is fully responsive and has a clean, simple and modern design.",
+      githubLink: "https://github.com/lmash12/workpage",
+      liveLink: "https://lmash12.github.io/workpage/",
+      image: project5,
     },
     // add more projects here
   ];

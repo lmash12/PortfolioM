@@ -29,6 +29,33 @@ nav img {
   word-spacing: 1px;
   letter-spacing: -0.5px;
 }
+.skills h2 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: #a9dc76;
+  font-size: 30px;
+}
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+.skills li {
+  border-radius: 15px;
+  background: rgba(219, 216, 227, 0.9);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.skills li:hover {
+  background: #5c5470;
+  box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.6),
+    0 0 9px 3px rgba(155, 126, 218, 0.2);
+  color: rgb(251, 251, 251);
+}
 
 .tagLine {
   display: flex;
@@ -45,18 +72,34 @@ nav img {
 }
 
 .projectsBtn a {
+  --purple: #9b7eda;
   text-decoration: none;
-  font-size: 22px;
-  color: #a9dc76;
-  border: 1px solid #ffa500;
-  border-radius: 10px;
-  padding: 10px 20px;
-  transition: all 0.3s ease;
+  font-size: 18px;
+  padding: 0.8em 3em;
+  letter-spacing: 0.08em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--purple);
+  background: linear-gradient(
+    to right,
+    rgba(155, 126, 218, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(155, 126, 218, 0.1) 100%
+  );
+  color: var(--purple);
+  box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.4),
+    0 0 9px 3px rgba(155, 126, 218, 0.1);
 }
 
 .projectsBtn a:hover {
-  border: 1px solid #a9dc76;
-  color: #ffa500;
+  color: #bfa3f3;
+  box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.6),
+    0 0 9px 3px rgba(155, 126, 218, 0.2);
 }
 
 h1 {
@@ -97,7 +140,7 @@ header .navBtn {
     display: block;
     position: absolute;
     right: 0;
-    top: -20px;
+    top: -25px;
     opacity: 1;
   }
   nav img {
@@ -141,7 +184,7 @@ header .navBtn {
     background-color: #232222;
     top: 0;
     right: 1rem;
-    color: #ffa500;
+    color: var(--purple);
   }
   .spin {
     animation: spin 1s linear;

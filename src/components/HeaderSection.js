@@ -23,7 +23,7 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="Home page"
                 style={({ isActive }) =>
-                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
+                  isActive ? { color: " #9b7eda" } : { color: "#a9dc76" }
                 }
                 to="/"
                 onClick={toggleNav}
@@ -35,7 +35,7 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="about page"
                 style={({ isActive }) =>
-                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
+                  isActive ? { color: " #9b7eda" } : { color: "#a9dc76" }
                 }
                 to="about"
                 onClick={toggleNav}
@@ -47,7 +47,7 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="projects page"
                 style={({ isActive }) =>
-                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
+                  isActive ? { color: " #9b7eda" } : { color: "#a9dc76" }
                 }
                 to="projects"
                 onClick={toggleNav}
@@ -59,7 +59,7 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="contact page"
                 style={({ isActive }) =>
-                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
+                  isActive ? { color: " #9b7eda" } : { color: "#a9dc76" }
                 }
                 to="contact"
                 onClick={toggleNav}
@@ -71,7 +71,7 @@ const HeaderSection = () => {
               <NavLink
                 aria-label="resume page"
                 style={({ isActive }) =>
-                  isActive ? { color: " #ffa500" } : { color: "#a9dc76" }
+                  isActive ? { color: " #9b7eda" } : { color: "#a9dc76" }
                 }
                 to="resume"
                 onClick={toggleNav}
