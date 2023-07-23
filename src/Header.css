@@ -184,7 +184,7 @@ header .navBtn {
     background-color: #232222;
     top: 0;
     right: 1rem;
-    color: var(--purple);
+    color: #9b7eda;
   }
   .spin {
     animation: spin 1s linear;
