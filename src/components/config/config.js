@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -11,9 +12,11 @@ const firebaseConfig = {
   storageBucket: "portfolionew-20d12.appspot.com",
   messagingSenderId: "625390979784",
   appId: "1:625390979784:web:38fef596a4fb4a7a23f3fd",
+  measurementId: "G-XY8FS9DWMQ",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
-export default app;
+export { app, analytics };

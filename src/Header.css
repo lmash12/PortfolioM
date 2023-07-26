@@ -124,6 +124,7 @@ header .navBtn {
   opacity: 0;
   color: #fff;
   font-size: 2.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 @media only screen and (max-width: 770px) {
@@ -135,17 +136,24 @@ header .navBtn {
   p {
     word-spacing: 1px;
   }
-
   header .navBtn {
     display: block;
     position: absolute;
     right: 0;
     top: -25px;
+    height: 67px;
+    width: 65px;
+    border-radius: 50%;
     opacity: 1;
+  }
+  header button {
+    display: grid;
+    place-items: center;
   }
   nav img {
     width: 60px;
     height: 60px;
+    object-fit: cover;
   }
   header li:first-child {
     margin-top: 100px;

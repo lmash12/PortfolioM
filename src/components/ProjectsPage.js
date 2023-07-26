@@ -56,8 +56,6 @@ const ProjectsPage = () => {
       liveLink: "https://quotes-6a00c.web.app/",
       image: project2,
     },
-
-    // add more projects here
   ];
 
   const handlePreview = (project) => {

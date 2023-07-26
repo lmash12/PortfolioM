@@ -1,11 +1,8 @@
 import React from "react";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import resume from "./img/Resume.pdf";
 import "../Pdf.css";
 import { FaFileDownload } from "react-icons/fa";
 
 const ResumePage = () => {
-  console.log(resume);
   return (
     <div className="pdf-container">
       <h1>Resume.</h1>
@@ -16,10 +13,12 @@ const ResumePage = () => {
       </span>
 
       <div className="myPdf">
-        <Document file={resume} className="pdf-viewer">
-          <Page pageNumber={1} />
-          <Page pageNumber={2} />
-        </Document>
+        <iframe
+          src="https://drive.google.com/file/d/1zvx1BXylttfObJDZ0JejOLaHUNVqMOQ4/preview?usp=sharing"
+          title="Resume For Lesley Mashaya"
+          width="100%"
+          height="600px"
+        />
       </div>
       <p>
         Thank you for checking out my resume! Please keep in mind that resumes,
