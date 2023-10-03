@@ -7,14 +7,14 @@ const ResumePage = () => {
     <div className="pdf-container">
       <h1>Resume.</h1>
       <span>
-        <a href="https://drive.google.com/uc?export=download&id=1CbjLGTtvrCel9ZCsUlLU32IVV7bioZUg">
+        <a href="https://drive.google.com/uc?export=download&id=1GNln_v0GGqzzmJJaJ1vWldzRPa8c3nL9">
           <FaFileDownload />
         </a>
       </span>
 
       <div className="myPdf">
         <iframe
-          src="https://drive.google.com/file/d/1CbjLGTtvrCel9ZCsUlLU32IVV7bioZUg/preview?usp=sharing"
+          src="https://drive.google.com/file/d/1GNln_v0GGqzzmJJaJ1vWldzRPa8c3nL9/preview?usp=sharing"
           title="Resume For Lesley Mashaya"
           width="100%"
           height="600px"

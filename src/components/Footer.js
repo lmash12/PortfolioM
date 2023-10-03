@@ -5,10 +5,10 @@ import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer">
-      <div class="card">
-        <span>Social Links</span>
+      <div className="card">
+        <span>Click here!</span>
         <a
-          class="social-link"
+          className="social-link"
           href="https://twitter.com/lmash12"
           target="_blank"
           rel="noopener noreferrer"
@@ -17,7 +17,7 @@ const Footer = () => {
           <FaTwitter className="icon twitter" />
         </a>
         <a
-          class="social-link"
+          className="social-link"
           href="https://github.com/lmash12"
           target="_blank"
           rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const Footer = () => {
           <FaGithub className="icon github" />
         </a>
         <a
-          class="social-link"
+          className="social-link"
           href="https://www.linkedin.com/in/lesley-mashaya-428b97278/"
           target="_blank"
           rel="noopener noreferrer"
@@ -35,7 +35,7 @@ const Footer = () => {
           <FaLinkedinIn className="icon linkedin" />
         </a>
         <a
-          class="social-link"
+          className="social-link"
           href="https://wa.me/+260978386755?text=Hello"
           target="_blank"
           rel="noopener noreferrer"

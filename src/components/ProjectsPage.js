@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "../Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { VscPreview } from "react-icons/vsc";
-import project1 from "./img/project1-preview.jpg";
-import project2 from "./img/project2-preview.jpg";
+import project1 from "./img/project1-preview.png";
+import project2 from "./img/project2-preview.png";
 import project3 from "./img/project3-preview.png";
 import project4 from "./img/project4-preview.png";
-import project5 from "./img/project5-preview.jpg";
+import project5 from "./img/project5-preview.png";
+import project6 from "./img/project6-preview.png";
 
 const ProjectsPage = () => {
   const [previewProject, setPreviewProject] = useState(null);
@@ -28,6 +29,15 @@ const ProjectsPage = () => {
       githubLink: "https://github.com/lmash12/workpage",
       liveLink: "https://lmash12.github.io/workpage/",
       image: project5,
+    },
+    {
+      id: 1,
+      title: "Insure Landing Page",
+      description:
+        "This Insure Landing Page project is part of Frontend Mentor Challenges. For this project i decided to use Vanilla Javascript, HTML and CSS. The page is fully responsive and has accesibility features implemented. The site is hosted on Firebase.",
+      githubLink: "https://github.com/lmash12/Insure",
+      liveLink: "https://insure-dbf71.web.app/",
+      image: project6,
     },
     {
       id: 3,
