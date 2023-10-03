@@ -144,6 +144,10 @@
   .project {
     width: 100%;
   }
+  .projects {
+    display: grid;
+    place-items: center;
+  }
   .project p {
     font-size: 16px;
     text-align: left;
@@ -178,6 +182,6 @@
   }
   .project p {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
   }
 }

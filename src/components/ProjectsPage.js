@@ -74,7 +74,7 @@ const ProjectsPage = () => {
   return (
     <div className="projects">
       <h1>Projects.</h1>
-      <p>Some of the projects I have worked on.</p>
+      <p>Some of my work.</p>
       <div className="projects-container">
         {projects.map((project) => (
           <div key={project.id} className="project">
