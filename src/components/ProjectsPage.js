@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import "../Projects.css";
+
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { VscPreview } from "react-icons/vsc";
+
 import project1 from "./img/project1-preview.png";
 import project2 from "./img/project2-preview.png";
 import project3 from "./img/project3-preview.png";
@@ -9,7 +12,14 @@ import project4 from "./img/project4-preview.png";
 import project5 from "./img/project5-preview.png";
 import project6 from "./img/project6-preview.png";
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
 const ProjectsPage = () => {
+  const singleProj = useState(null);
+  const projectRefs = useRef([]);
   const [previewProject, setPreviewProject] = useState(null);
   const projects = [
     {
@@ -71,13 +81,49 @@ const ProjectsPage = () => {
   const handlePreview = (project) => {
     setPreviewProject(project);
   };
+
+  useEffect(() => {
+    projectRefs.current.forEach((ref, index) => {
+      const anime = ref;
+      gsap.from(anime, {
+        y: 50,
+        opacity: 0, // Initial state
+        duration: 1,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: anime,
+          start: "top bottom", // Adjust this based on when you want the animation to start
+          end: "bottom center", // Adjust this based on when you want the animation to end
+          scrub: true,
+        },
+      });
+
+      gsap.to(anime, {
+        y: 0,
+        opacity: 1, // Final state
+        duration: 2,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: anime,
+          start: "top bottom", // Adjust this based on when you want the animation to start
+          end: "bottom center", // Adjust this based on when you want the animation to end
+          scrub: true,
+        },
+      });
+    });
+  }, []);
+
   return (
     <div className="projects">
       <h1>Projects.</h1>
       <p>Some of my work.</p>
       <div className="projects-container">
-        {projects.map((project) => (
-          <div key={project.id} className="project">
+        {projects.map((project, index) => (
+          <div
+            key={project.id}
+            className="project"
+            ref={(el) => (projectRefs.current[index] = el)}
+          >
             <h3>{project.title}</h3>
             <p style={{ wordSpacing: "1px" }}>{project.description}</p>
             <div className="links-container">
