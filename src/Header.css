@@ -23,7 +23,7 @@ nav img {
   margin-left: 30px;
 }
 .home-tag p {
-  margin-top: 50px;
+  margin-top: 80px;
   text-align: center;
   color: #a9dc76;
   word-spacing: 1px;
@@ -68,7 +68,7 @@ nav img {
 .projectsBtn {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .projectsBtn a {

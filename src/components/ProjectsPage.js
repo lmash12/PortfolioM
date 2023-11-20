@@ -14,11 +14,9 @@ import project6 from "./img/project6-preview.png";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 const ProjectsPage = () => {
-  const singleProj = useState(null);
   const projectRefs = useRef([]);
   const [previewProject, setPreviewProject] = useState(null);
   const projects = [
